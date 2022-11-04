@@ -14,10 +14,8 @@ conflicts=(openmp)
 replaces=(openmp)
 options=('!lto') # https://bugzilla.redhat.com/show_bug.cgi?id=1988155
 _source_base=https://github.com/llvm/llvm-project/releases/download/llvmorg-$pkgver
-source=($_source_base/openmp-$pkgver.src.tar.xz{,.sig})
-sha256sums=('4f731ff202add030d9d68d4c6daabd91d3aeed9812e6a5b4968815cfdff0eb1f'
-            'SKIP')
-validpgpkeys=('474E22316ABF4785A88C6E8EA2C794A986419D8A') # Tom Stellard <tstellar@redhat.com>
+source=($_source_base/openmp-$pkgver.src.tar.xz)
+sha256sums=('4f731ff202add030d9d68d4c6daabd91d3aeed9812e6a5b4968815cfdff0eb1f')
 
 prepare() {
   cd openmp-$pkgver.src
