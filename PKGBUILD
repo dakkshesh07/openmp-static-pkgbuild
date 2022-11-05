@@ -9,7 +9,6 @@ url="https://openmp.llvm.org/"
 license=('custom:Apache 2.0 with LLVM Exception')
 depends=('llvm-libs' 'libelf' 'libffi')
 makedepends=('llvm' 'clang' 'cmake' 'ninja')
-provides=(openmp)
 conflicts=(openmp)
 replaces=(openmp)
 options=('!lto') # https://bugzilla.redhat.com/show_bug.cgi?id=1988155
